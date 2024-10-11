@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Helvetica neue";
+    src: url(./fonts/HelveticaNeueUltraLight.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Acumin pro';
+    src: url(./fonts/Acumin-RPro.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2{
+    font-family: "Helvetica neue",Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    color: white;
+    margin-bottom: -20px;
+    font-weight: lighter;
+}
+
+h1{
+    font-family: 'Acumin pro',Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    color: white;
+}
+
+p{
+    font-family: 'Acumin pro',Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+span{
+    font-weight: bolder;
+}

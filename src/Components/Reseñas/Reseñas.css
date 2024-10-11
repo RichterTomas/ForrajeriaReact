@@ -1,0 +1,30 @@
+.pr{
+    height: 75px;
+    width: 75px;
+    filter: grayscale(100%) brightness(110%);
+}
+
+.slick-dots {
+    bottom: -40px; /* Ajusta la posición vertical*/
+  }
+
+.slick-dots li button {
+    background-color: rgb(37,37,37); /* Color de fondo de los puntos inactivos */
+    border: none; /* Elimina el borde de los botones */
+    border-radius: 50%; /* Puntos sean redondos */
+    width: 12px; /* Tamaño horizontal del punto */
+    height: 12px; /* Tamaño vertical del punto */
+  }
+
+.slick-dots li button:before {
+  content: ''; /* Asegura que no haya contenido extra */
+}
+
+.slick-dots li.slick-active button {
+  background-color: white; /* Fondo de los puntos activos */
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important
+}
