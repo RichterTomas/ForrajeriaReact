@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import Header from "./Components/Header/Header"
+import Presentacion from "./Components/Presentacion/Presentacion"
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   return (
     <ChakraProvider>
       <Header/>
+      <Presentacion/>
     </ChakraProvider>
   )
 }
