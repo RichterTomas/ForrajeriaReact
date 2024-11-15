@@ -99,8 +99,12 @@ return (
             </Box>
 
         </Box>
-    </Box>
 
+        <Flex backgroundImage= '../public/image.png' width= '100%' height='50vh' display='flex' flexDirection='column' justifyContent='center' alignItems='center' marginTop = '100px'>
+        <Text color = 'white' fontWeight='bolder' fontSize='30px'>Realiza tu consulta con nosotros!</Text>
+        <Link color = '#ff7300'>Click aqui</Link>
+        </Flex>
+    </Box>
 
 
 
