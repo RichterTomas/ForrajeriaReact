@@ -64,6 +64,41 @@ return (
             </Box>
 
         </Box>
+
+        <Box width='70%' paddingTop = '50px' display = 'flex'>
+            <Box display='flex' width= '25%'>
+                <Image src='../public/envio.svg' width= '50px' height = '50px'/>
+                <Flex display='flex' flexDirection='column' paddingLeft = '10px'>
+                    <Text fontWeight='bold'>Envios en Santa Rosa</Text>
+                    <Text width= '75%'>Recibe tu pedido gratis en menos de 48 hs.</Text>
+                </Flex>
+            </Box>
+
+            <Box display='flex' width= '25%'>
+                <Image src='../public/politica.svg' width= '50px' height = '50px'/>
+                <Flex display='flex' flexDirection='column' paddingLeft = '10px'>
+                    <Text fontWeight='bold'>Politica de satisfacción</Text>
+                    <Text width= '70%'>Si tienes un problema, puedes contactarnos.</Text>
+                </Flex>
+            </Box>
+
+            <Box display='flex' width= '25%'>
+                <Image src='../public/atencion.svg' width= '50px' height = '50px'/>
+                <Flex display='flex' flexDirection='column' paddingLeft = '10px'>
+                    <Text fontWeight='bold'>Atención virtual</Text>
+                    <Text width= '75%'>Sistema de atención virtual, disponible 24 hs.</Text>
+                </Flex>
+            </Box>
+
+            <Box display='flex' width = '25%'>
+                <Image src='../public/pago.svg' width= '50px' height = '50px'/>
+                <Flex display='flex' flexDirection='column' paddingLeft = '10px'>
+                    <Text fontWeight='bold'>Paga al recibir</Text>
+                    <Text width= '75%'>Selecciona tu metodo de pago preferido.</Text>
+                </Flex>
+            </Box>
+
+        </Box>
     </Box>
 
 
