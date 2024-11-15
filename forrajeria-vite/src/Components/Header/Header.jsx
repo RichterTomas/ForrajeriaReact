@@ -1,5 +1,5 @@
 import React, { useState } from 'react'; 
-import { Box, Text, Flex, Link } from '@chakra-ui/react';
+import { Box, Text, Flex, Link, Image } from '@chakra-ui/react';
 
 const Header = () => {
     const [active, setActive] = useState('componente1');
@@ -9,8 +9,8 @@ const Header = () => {
     };
 
     return (
-        <Box bg="#ff794c" pb="50px" display='flex' justifyContent='space-around'>
-            <Text>asdasd</Text>
+        <Box bg="#ff794c" height="70px" display='flex' justifyContent='space-around' alignContent="center" alignItems="center">
+            <Image src = "./public/logo.svg" width="60px" />
 
             <Flex justify="space-around" width="30%">
                 {['componente1', 'componente2', 'componente3'].map((component) => (
@@ -18,8 +18,15 @@ const Header = () => {
                         key={component}
                         href={`#${component}`}
                         onClick={() => handleClick(component)}
-                        color={active === component ? 'black' : 'gray.600'} 
+                        color={active === component ? 'white' : 'white'} 
                         fontWeight={active === component ? 'bold' : 'normal'}
+                        textDecoration="none"
+                        _hover={{
+                        transform: "translateY(-3px)",
+                        textDecoration: "none"
+                        }}
+                        transition= "transform 0.2s"
+                        
                     >
                         <Text>{component}</Text>
                     </Link>
