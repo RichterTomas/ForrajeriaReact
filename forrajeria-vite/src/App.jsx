@@ -3,6 +3,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Header from "./Components/Header/Header"
 import Presentacion from "./Components/Presentacion/Presentacion"
 import Inicio from "./Components/Inicio/Inicio"
+import Footer from "./Components/Footer/Footer"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header/>
       <Presentacion/>
       <Inicio/>
+      <Footer/>
     </ChakraProvider>
   )
 }

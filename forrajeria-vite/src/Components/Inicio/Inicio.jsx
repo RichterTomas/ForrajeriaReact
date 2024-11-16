@@ -65,7 +65,7 @@ return (
 
         </Box>
 
-        <Box width='70%' paddingTop = '50px' display = 'flex'>
+        <Box width='70%' paddingTop = '100px' display = 'flex'>
             <Box display='flex' width= '25%'>
                 <Image src='../public/envio.svg' width= '50px' height = '50px'/>
                 <Flex display='flex' flexDirection='column' paddingLeft = '10px'>
