@@ -29,10 +29,10 @@ const Footer = () => {
 
                 <Flex display = 'flex' flexDirection= 'column'>
                     <Text as = 'h2' fontSize='30px' paddingBottom='5px'>Información de negocio</Text>
-                    <Link>Politica de privacidad</Link>
-                    <Link>Términos y servicios</Link>
-                    <Link>Politica de cancelación y reembolso</Link>
-                    <Link>Politica de envíos</Link>
+                    <Link _hover = {{color: "#ff7300", textDecoration: 'none', transition: '0.2s ease-in-out'}}>Politica de privacidad</Link>
+                    <Link _hover = {{color: "#ff7300", textDecoration: 'none', transition: '0.2s ease-in-out'}}>Términos y servicios</Link>
+                    <Link _hover = {{color: "#ff7300", textDecoration: 'none', transition: '0.2s ease-in-out'}}>Politica de cancelación y reembolso</Link>
+                    <Link _hover = {{color: "#ff7300", textDecoration: 'none', transition: '0.2s ease-in-out'}}>Politica de envíos</Link>
                 </Flex>
             </Box>
             
