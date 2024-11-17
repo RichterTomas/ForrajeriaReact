@@ -7,28 +7,28 @@ return (
     <Box display='flex' flexDirection='column' alignItems='center' backgroundColor = '#f7f4f2'>
         <Flex width='70%' display='flex' justifyContent='space-between' paddingTop = '50px'>
             <Text as = 'h2' fontSize='30px' fontWeight='light'>Menú por mascotas</Text>
-            <Link>Ver todo</Link>
+            <Link transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}>Ver todo</Link>
         </Flex>
 
         <Box width='70%' display='flex' justifyContent='space-between' paddingTop = '20px'>
            <Flex display='flex' flexDirection= 'column' alignItems='center'>
                 <Image src = '../public/perro.jpg' width='200px' height='200px' borderRadius='200px'/>
-                <Link paddingTop = '10px'>Perros</Link>
+                <Link paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}>Perros</Link>
             </Flex>
 
             <Flex display='flex' flexDirection= 'column' alignItems='center'>
                 <Image src = '../public/gato2.png' width='200px' height='200px' borderRadius='200px'/>
-                <Link paddingTop = '10px'>Gatos</Link>
+                <Link paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}>Gatos</Link>
             </Flex>
 
             <Flex display='flex' flexDirection= 'column' alignItems='center'>
                 <Image src = '../public/gallina.png' width='200px' height='200px' borderRadius='200px'/>
-                <Link paddingTop = '10px'>Aves</Link>
+                <Link paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}>Aves</Link>
             </Flex>
 
             <Flex display='flex' flexDirection= 'column' alignItems='center'>
                 <Image src = '../public/conejo.png' width='200px' height='200px' borderRadius='200px'/>
-                <Link paddingTop = '10px'>Conejos</Link>
+                <Link paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}>Conejos</Link>
             </Flex>
             
         </Box>
