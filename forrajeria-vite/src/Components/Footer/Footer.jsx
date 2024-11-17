@@ -45,9 +45,21 @@ const Footer = () => {
                 <Box>
                     <Flex display="flex" flexDirection="column" alignItems='center'>
                         <Text paddingBottom = '10px' fontWeight='bold'>Hablanos</Text>
+
                         <Flex>
-                            <Link><Image src = '../public/facebook.svg' width = '35px' height='35px'/></Link>
-                            <Link><Image src = '../public/whatsapp.svg' width = '35px' height='35px'/></Link>
+                            <Link>
+                                <Image src = '../public/facebook.svg' width = '35px' height='35px' 
+                                filter = 'grayscale(100%)' 
+                                transition = 'filter 0.2s ease-in-out' 
+                                _hover = {{filter: 'grayscale(0%)'}}/>
+                            </Link>
+
+                            <Link>
+                                <Image src = '../public/whatsapp.svg' width = '35px' height='35px' 
+                                filter = 'grayscale(100%)' 
+                                transition = 'filter 0.2s ease-in-out' 
+                                _hover = {{filter: 'grayscale(0%)'}}/>
+                            </Link>
                         </Flex>
                     </Flex>
                 </Box>
