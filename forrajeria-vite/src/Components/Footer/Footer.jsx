@@ -1,4 +1,4 @@
-import { Box, Text, Flex } from '@chakra-ui/react';
+import { Box, Text, Flex, Link, Image } from '@chakra-ui/react';
 
 const Footer = () => {
     return (
@@ -7,7 +7,7 @@ const Footer = () => {
             
             <Box width="70%" display="flex" justifyContent="space-between" paddingTop='50px'>
                 <Flex display="flex" flexDirection="column">
-                    <Text as = 'h2' fontSize='30px'>Forrajería "Los Patos"</Text>
+                    <Text as = 'h2' fontSize='30px' paddingBottom='5px'>Forrajería "Los Patos"</Text>
                     <Text>Entregamos satisfacción!</Text>
                     <Text whiteSpace="nowrap">
                         Nos mueve tu{' '}
@@ -27,32 +27,36 @@ const Footer = () => {
                     </Text>
                 </Flex>
 
-                <Flex>
-                    <Text>Hola</Text>
+                <Flex display = 'flex' flexDirection= 'column'>
+                    <Text as = 'h2' fontSize='30px' paddingBottom='5px'>Información de negocio</Text>
+                    <Link>Politica de privacidad</Link>
+                    <Link>Términos y servicios</Link>
+                    <Link>Politica de cancelación y reembolso</Link>
+                    <Link>Politica de envíos</Link>
                 </Flex>
             </Box>
             
-            <Flex width="70%" bg="black" padding="1px" marginTop="50px"></Flex>
+            <Flex width="70%" bg="black" padding="1px" marginTop="50px" marginBottom = '10px'></Flex>
 
             <Box width="70%" display="flex" justifyContent="space-between">
                 <Flex>
-                    <Text>Columna 1</Text>
+                    <Text fontWeight='bold'>© 2024 Forrajeria "Los Patos"</Text>
                 </Flex>
                 <Box>
-                    <Flex display="flex" flexDirection="column">
-                        <Text>Columna 2</Text>
+                    <Flex display="flex" flexDirection="column" alignItems='center'>
+                        <Text paddingBottom = '10px' fontWeight='bold'>Hablanos</Text>
                         <Flex>
-                            <Text>Logo</Text>
-                            <Text>Logo</Text>
+                            <Link><Image src = '../public/facebook.svg' width = '35px' height='35px'/></Link>
+                            <Link><Image src = '../public/whatsapp.svg' width = '35px' height='35px'/></Link>
                         </Flex>
                     </Flex>
                 </Box>
-                <Box>
-                    <Text>Columna 3</Text>
-                    <Flex>
-                        <Text>Logo</Text>
-                        <Text>Logo</Text>
-                        <Text>Logo</Text>
+                <Box display = 'flex' flexDirection='column' alignContent='end' alignItems='end' textAlign= 'end' width='20%'>
+                    <Text paddingBottom = '10px' fontWeight='bold'>Aceptamos</Text>
+                    <Flex display = 'flex' justifyContent = 'space-between' width = '70%'>
+                        <Image src = '../public/visa.svg' width = '50px' height='50px'/>
+                        <Image src = '../public/mastercard.svg' width = '50px' height='50px'/>
+                        <Image src = '../public/mercadopago.png' width = '50px' height='50px'/>
                     </Flex>
                 </Box>
             </Box>
