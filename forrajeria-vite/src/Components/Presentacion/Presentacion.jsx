@@ -4,7 +4,7 @@ import { Box, Text, Flex, Link, Image } from '@chakra-ui/react';
 const Presentacion = () => {
     
     return (
-        <Box bg="black" >
+        <Box bg="black" paddingTop = '70px' >
             <Image 
             src = "./public/image.png"
             width="100%"
