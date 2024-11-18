@@ -2,7 +2,7 @@ import { Box, Text, Flex, Link, Image } from '@chakra-ui/react';
 
 const Footer = () => {
     return (
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" id = 'Contacto'>
             <Flex width="70%" bg="black" padding="1px" marginTop="50px"></Flex>
             
             <Box width="70%" display="flex" justifyContent="space-between" paddingTop='50px'>

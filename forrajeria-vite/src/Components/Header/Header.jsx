@@ -9,11 +9,12 @@ const Header = () => {
     };
 
     return (
-        <Box bg="#ff794c" height="70px" display='flex' justifyContent='space-around' alignContent="center" alignItems="center">
+        <Box bg="#ff794c" height="70px" display='flex'  justifyContent = 'center' position = 'fixed' width='100%' top = '0'>
+            <Box display = 'flex' width='70%' justifyContent='space-between' alignItems='center'>
             <Image src = "./public/logo.svg" width="60px" />
 
             <Flex justify="space-around" width="30%">
-                {['componente1', 'componente2', 'componente3'].map((component) => (
+                {['Inicio', 'Contacto', 'Comprar'].map((component) => (
                     <Link
                         key={component}
                         href={`#${component}`}
@@ -32,6 +33,8 @@ const Header = () => {
                     </Link>
                 ))}
             </Flex>
+            </Box>
+            
         </Box>
     );
 };

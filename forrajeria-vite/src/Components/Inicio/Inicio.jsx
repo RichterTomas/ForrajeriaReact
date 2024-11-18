@@ -4,8 +4,8 @@ import { Box, Text, Flex, Link, Image } from '@chakra-ui/react';
 const Inicio = () => {
 
 return (
-    <Box display='flex' flexDirection='column' alignItems='center' backgroundColor = '#f7f4f2'>
-        <Flex width='70%' display='flex' justifyContent='space-between' paddingTop = '50px'>
+    <Box display='flex' flexDirection='column' alignItems='center' backgroundColor = '#f7f4f2' id = 'Inicio'>
+        <Flex width='70%' display='flex' justifyContent='space-between' paddingTop = '70px'>
             <Text as = 'h2' fontSize='30px' fontWeight='light'>Menú por mascotas</Text>
             <Link transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}>Ver todo</Link>
         </Flex>
