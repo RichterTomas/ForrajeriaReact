@@ -40,13 +40,13 @@ return (
             <Box width='100%' display='flex' flexDirection='column' paddingTop = '20px'>
                 <Flex width='100%' display='flex' flexDirection='row'>
                     <Flex width='33.3333%' justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
-                        <Image src = '../public/Estampa.png' width='70%' height='40%'/>
+                        <Image src = '../public/Estampa.png' width='70%' height='45%'/>
                     </Flex>
                     <Flex width='33.3333%' justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
-                        <Image src = '../public/kongo.png' width='70%' height='40%'/>
+                        <Image src = '../public/kongo.png' width='70%' height='50%'/>
                     </Flex>
                     <Flex width='33.3333%' justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
-                        <Image src = '../public/pedigree.jpg' width='70%' height='60%'/>
+                        <Image src = '../public/pedigree.jpg' width='70%' height='70%'/>
                     </Flex>
                 </Flex>
 
