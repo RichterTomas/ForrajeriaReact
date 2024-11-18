@@ -1,8 +1,10 @@
 import { Box, Text, Flex, Link, Image } from '@chakra-ui/react';
+import { motion } from "framer-motion";
 
+const MotionBox = motion(Box)
 const Footer = () => {
     return (
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" id = 'Contacto'>
+        <MotionBox display="flex" flexDirection="column" justifyContent="center" alignItems="center" id = 'Contacto' initial = {{opacity: 0}} animate = {{opacity: 1}} transition={{duration: 1.5, ease: 'ease-in-out'}}>
             <Flex width="70%" bg="black" padding="1px" marginTop="50px"></Flex>
             
             <Box width="70%" display="flex" justifyContent="space-between" paddingTop='50px'>
@@ -72,7 +74,7 @@ const Footer = () => {
                     </Flex>
                 </Box>
             </Box>
-        </Box>
+        </MotionBox>
     );
 };
 
