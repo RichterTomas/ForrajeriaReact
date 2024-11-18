@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <Box bg="#ff794c" height="70px" display='flex'  justifyContent = 'center' position = 'fixed' width='100%' top = '0'>
             <Box display = 'flex' width='70%' justifyContent='space-between' alignItems='center'>
-            <Image src = "./public/logo.svg" width="60px" />
+            <Image src = "./public/pato4.svg" width="60px" height='40px' />
 
             <Flex justify="space-around" width="30%">
                 {['Inicio', 'Contacto', 'Comprar'].map((component) => (

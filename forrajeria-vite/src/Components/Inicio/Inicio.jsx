@@ -10,7 +10,7 @@ return (
             <Link transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}>Ver todo</Link>
         </Flex>
 
-        <Box width='70%' display='flex' justifyContent='space-between' paddingTop = '20px'>
+        <Box width='70%' display='flex' justifyContent='space-between' paddingTop = '20px' id = 'mascotas'>
            <Flex display='flex' flexDirection= 'column' alignItems='center'>
                 <Image src = '../public/perro.jpg' width='200px' height='200px' borderRadius='200px'/>
                 <Link paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}>Perros</Link>
@@ -34,38 +34,38 @@ return (
         </Box>
 
 
-        <Box width='70%' display='flex'  flexDirection = 'column' justifyContent='space-between' paddingTop = '100px'>
+        <Box width='70%' display='flex'  flexDirection = 'column' justifyContent='space-between' paddingTop = '100px' id ='distribuidores'>
             <Text as = 'h2' fontSize= '30px' fontWeight='light'>Distribuidores de...</Text>
 
             <Box width='100%' display='flex' flexDirection='column' paddingTop = '20px'>
                 <Flex width='100%' display='flex' flexDirection='row'>
-                    <Flex width='33.3333%' justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white'>
-                        <Image src = '../public/sabrositos.png' />
+                    <Flex width='33.3333%' justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
+                        <Image src = '../public/Estampa.png' width='70%' height='40%'/>
                     </Flex>
-                    <Flex width='33.3333%' justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white'>
-                        <Image src = '../public/sabrositos.png' />
+                    <Flex width='33.3333%' justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
+                        <Image src = '../public/kongo.png' width='70%' height='40%'/>
                     </Flex>
-                    <Flex width='33.3333%' justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white'>
-                        <Image src = '../public/sabrositos.png' />
+                    <Flex width='33.3333%' justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
+                        <Image src = '../public/pedigree.jpg' width='70%' height='60%'/>
                     </Flex>
                 </Flex>
 
                 <Flex width='100%' display='flex' flexDirection='row' >
-                    <Flex width='33.3333%'  justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white'>
-                        <Image src = '../public/sabrositos.png' />
+                    <Flex width='33.3333%'  justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
+                        <Image src = '../public/purina.png' width='70%' height='70%' />
                     </Flex>
-                    <Flex width='33.3333%'  justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white'>
-                        <Image src = '../public/sabrositos.png' />
+                    <Flex width='33.3333%'  justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
+                        <Image src = '../public/royal canin.png' width='70%' height='40%' />
                     </Flex>
-                    <Flex width='33.3333%'  justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' >
-                        <Image src = '../public/sabrositos.png' />
+                    <Flex width='33.3333%'  justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
+                        <Image src = '../public/sabrositos.png' width='70%' height='80%' />
                     </Flex>
                 </Flex>
             </Box>
 
         </Box>
 
-        <Box width='70%' paddingTop = '100px' display = 'flex'>
+        <Box width='70%' paddingTop = '100px' display = 'flex' id = 'politicas'>
             <Box display='flex' width= '25%'>
                 <Image src='../public/envio.svg' width= '50px' height = '50px'/>
                 <Flex display='flex' flexDirection='column' paddingLeft = '10px'>
@@ -100,7 +100,7 @@ return (
 
         </Box>
 
-        <Flex backgroundImage= '../public/image.png' width= '100%' height='50vh' display='flex' flexDirection='column' justifyContent='center' alignItems='center' marginTop = '100px'>
+        <Flex backgroundImage= '../public/image.png' width= '100%' height='50vh' display='flex' flexDirection='column' justifyContent='center' alignItems='center' marginTop = '100px' id = 'imagen'>
         <Text color = 'white' fontWeight='bolder' fontSize='30px'>Realiza tu consulta con nosotros!</Text>
         <Link color = '#ff7300'>Click aqui</Link>
         </Flex>
