@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 const MotionBox = motion(Box)
 const Footer = () => {
     return (
-        <MotionBox display="flex" flexDirection="column" justifyContent="center" alignItems="center" id = 'Contacto' initial = {{opacity: 0}} animate = {{opacity: 1}} transition={{duration: 1.5, ease: 'ease-in-out'}}>
+        <MotionBox display="flex" flexDirection="column" justifyContent="center" alignItems="center" id = 'Contacto' 
+            initial = {{x: 0, opacity: 0}}
+            whileInView = {{ x: 0, opacity: 1}}
+            viewport={{once: true}}
+            transition = {{duration: 2, ease: 'easeInOut' }}>
             <Flex width="70%" bg="black" padding="1px" marginTop="50px"></Flex>
             
             <Box width="70%" display="flex" justifyContent="space-between" paddingTop='50px'>

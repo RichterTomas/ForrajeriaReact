@@ -30,7 +30,7 @@ const Presentacion = () => {
                 autoplay = {{delay: 3500}}
                 pagination = {{clickable: true}}
                 loop = {true}
-                style = {{width: "100%", height: '650px'}}
+                style = {{width: "100%", height: '600px'}}
             >
                 {images.map((image,index) => (
                     <SwiperSlide key = {index}>
