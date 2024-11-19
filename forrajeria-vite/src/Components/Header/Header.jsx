@@ -9,7 +9,7 @@ const Header = () => {
     };
 
     return (
-        <Box bg="#ff794c" height="70px" display='flex'  justifyContent = 'center' position = 'fixed' width='100%' top = '0'>
+        <Box bg="#ff794c" height="70px" display='flex'  justifyContent = 'center' position = 'fixed' width='100%' top = '0' zIndex='10000'>
             <Box display = 'flex' width='70%' justifyContent='space-between' alignItems='center'>
             <Image src = "./public/pato4.svg" width="60px" height='40px' />
 
