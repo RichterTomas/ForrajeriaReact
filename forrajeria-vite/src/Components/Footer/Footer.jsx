@@ -60,7 +60,7 @@ const Footer = () => {
                                 _hover = {{filter: 'grayscale(0%)'}}/>
                             </Link>
 
-                            <Link>
+                            <Link href='https://wa.me/2954529859?text=¡Hola!%20Estoy%20interesado%20en%20más%20información.'>
                                 <Image src = '../public/whatsapp.svg' width = '35px' height='35px' 
                                 filter = 'grayscale(100%)' 
                                 transition = 'filter 0.2s ease-in-out' 

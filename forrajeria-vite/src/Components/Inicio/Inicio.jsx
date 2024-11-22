@@ -1,16 +1,19 @@
-import { Box, Text, Flex, Link, Image } from '@chakra-ui/react';
+import { Box, Text, Flex, Link, Image, IconButton } from '@chakra-ui/react';
 import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa";
 
 const MotionFlex = motion(Flex);
 const MotionText = motion(Text)
 const MotionLink = motion(Link)
 const MotionImage = motion(Image)
 const MotionBox = motion(Box)
+const whatsappLink = "https://wa.me/5491100000000?text=¡Hola!%20Estoy%20interesado%20en%20más%20información.";
 
 const Inicio = () => {
 
 return (
     <Box overflow='hidden' display='flex' flexDirection='column' alignItems='center' backgroundColor = '#f7f4f2' id = 'Inicio'>
+       
         <MotionFlex width='70%' display='flex' justifyContent='space-between' paddingTop = '70px'>
 
             <MotionText as = 'h2' fontSize='30px' fontWeight='light'
@@ -72,21 +75,21 @@ return (
             <Box width='100%' display='flex' flexDirection='column' paddingTop = '20px'>
                 <Flex width='100%' display='flex' flexDirection='row'>
                     <Flex width='33.3333%' justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
-                        <MotionImage src = '../public/Estampa.png' width='70%' height='45%' 
+                        <MotionImage src = '../public/Estampa.png' width='80%' height='60%' 
                         initial = {{x: 0, opacity: 0}}
                         whileInView = {{ x: 0, opacity: 1}}
                         viewport={{once: true}}
                         transition = {{duration: 2, ease: 'easeInOut' }}/>
                     </Flex>
                     <Flex width='33.3333%' justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
-                        <MotionImage src = '../public/kongo.png' width='70%' height='50%' 
+                        <MotionImage src = '../public/kongo.png' width='80%' height='70%' 
                         initial = {{x: 0, opacity: 0}}
                         whileInView = {{ x: 0, opacity: 1}}
                         viewport={{once: true}}
                         transition = {{duration: 2, ease: 'easeInOut' }}/>
                     </Flex>
                     <Flex width='33.3333%' justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
-                        <MotionImage src = '../public/pedigree.jpg' width='70%' height='70%' 
+                        <MotionImage src = '../public/pedigree.jpg' width='70%' height='80%' 
                         initial = {{x: 0, opacity: 0}}
                         whileInView = {{ x: 0, opacity: 1}}
                         viewport={{once: true}}
@@ -96,21 +99,21 @@ return (
 
                 <Flex width='100%' display='flex' flexDirection='row' >
                     <Flex width='33.3333%'  justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
-                        <MotionImage src = '../public/purina.png' width='70%' height='70%' 
+                        <MotionImage src = '../public/purina.png' width='80%' height='100%' 
                         initial = {{x: 0, opacity: 0}}
                         whileInView = {{ x: 0, opacity: 1}}
                         viewport={{once: true}}
                         transition = {{duration: 2, ease: 'easeInOut' }} />
                     </Flex>
                     <Flex width='33.3333%'  justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
-                        <MotionImage src = '../public/royal canin.png' width='70%' height='40%' 
+                        <MotionImage src = '../public/royal canin.png' width='70%' height='50%' 
                         initial = {{x: 0, opacity: 0}}
                         whileInView = {{ x: 0, opacity: 1}}
                         viewport={{once: true}}
                         transition = {{duration: 2, ease: 'easeInOut' }} />
                     </Flex>
                     <Flex width='33.3333%'  justifyContent='center' border= 'solid 2px #e7e2de' backgroundColor='white' alignItems='center'>
-                        <MotionImage src = '../public/sabrositos.png' width='70%' height='80%' 
+                        <MotionImage src = '../public/sabrositos.png' width='80%' height='90%' 
                         initial = {{x: 0, opacity: 0}}
                         whileInView = {{ x: 0, opacity: 1}}
                         viewport={{once: true}}
@@ -159,6 +162,26 @@ return (
             </Box>
 
         </MotionBox>
+
+        <Link
+        href="https://wa.me/2954529859?text=¡Hola!%20Estoy%20interesado%20en%20más%20información."
+        isExternal
+        position="fixed"
+        bottom="10px"
+        right="20px"
+        zIndex="1000"
+        >
+            <IconButton
+            icon={<FaWhatsapp />}
+            aria-label="WhatsApp Chat"
+            colorScheme="green"
+            size="lg"
+            isRound
+            boxShadow="lg"
+            transition="all 0.3s"
+            _hover={{ transform: "scale(1.1)" }}
+                />
+        </Link>
 
         <Flex backgroundImage= '../public/image.png' width= '100%' height='58vh' display='flex' flexDirection='column' justifyContent='center' alignItems='center' marginTop = '100px' id = 'imagen'>
             <MotionText color = 'white' fontWeight='bolder' fontSize='30px' 
