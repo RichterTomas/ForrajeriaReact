@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const MotionBox = motion(Box)
 const Footer = () => {
     return (
-        <MotionBox display="flex" flexDirection="column" justifyContent="center" alignItems="center" id = 'Contacto' 
+        <MotionBox backgroundColor = '#f7f4f2' display="flex" flexDirection="column" justifyContent="center" alignItems="center" id = 'Contacto' 
             initial = {{x: 0, opacity: 0}}
             whileInView = {{ x: 0, opacity: 1}}
             viewport={{once: true}}

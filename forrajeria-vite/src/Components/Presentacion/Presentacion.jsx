@@ -15,7 +15,7 @@ const Presentacion = () => {
     ]
     
     return (
-        <Box bg="black" paddingTop = '70px' sx = {{".swiper-pagination-bullet": {
+        <Box bg="black" sx = {{".swiper-pagination-bullet": {
             bg: 'black',
             opacity: 0.4,
             transition: 'background-color 0.3s ease'

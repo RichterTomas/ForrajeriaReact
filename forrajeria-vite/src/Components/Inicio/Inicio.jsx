@@ -160,7 +160,7 @@ return (
 
         </MotionBox>
 
-        <Flex backgroundImage= '../public/image.png' width= '100%' height='50vh' display='flex' flexDirection='column' justifyContent='center' alignItems='center' marginTop = '100px' id = 'imagen'>
+        <Flex backgroundImage= '../public/image.png' width= '100%' height='58vh' display='flex' flexDirection='column' justifyContent='center' alignItems='center' marginTop = '100px' id = 'imagen'>
             <MotionText color = 'white' fontWeight='bolder' fontSize='30px' 
             initial = {{x: 0, opacity: 0}}
             whileInView = {{ x: 0, opacity: 1}}
