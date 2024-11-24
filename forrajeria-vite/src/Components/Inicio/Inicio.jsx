@@ -69,7 +69,7 @@ return (
 
 
         <Box width='70%' display='flex'  flexDirection = 'column' justifyContent='space-between' paddingTop = '100px' id ='distribuidores'>
-            <MotionText as = 'h2' fontSize= '30px' fontWeight='light'
+            <MotionText as = 'h2' fontSize={{base: '30px', xl: '30px', lg: '29px', md: '27px', sm: '25px'}} fontWeight='light'
               initial = {{x: 0, opacity: 0}}
               whileInView = {{ x: 0, opacity: 1}}
               viewport={{once: true}}
@@ -132,35 +132,35 @@ return (
         whileInView = {{ x: 0, opacity: 1}}
         viewport={{once: true}}
         transition = {{duration: 2, ease: 'easeInOut' }}>
-            <Box display='flex' width= '25%'>
-                <Image src='../public/envio.svg' width= '50px' height = '50px'/>
+            <Box display='flex' flexDirection = {{base: 'row', xl: 'row', lg:'row',md: 'column', sm: 'column'}} alignItems={{base:'flex-start', xl:'flex-start', lg:'flex-start',md:'center', sm: 'center'}} textAlign={{base:'left', xl: 'left', lg: 'left',md:'center', sm:'center'}} width= '25%'>
+                <Image src='../public/envio.svg' width= {{base:'50px', xl: '50px', lg: '40px', md: '35px', sm: '25px'}} height = {{base:'50px',xl: '50px',lg: '40px',md: '35px', sm: '25px'}}/>
                 <Flex display='flex' flexDirection='column' paddingLeft = '10px'>
-                    <Text fontWeight='bold'>Envios en Santa Rosa</Text>
-                    <Text width= '75%'>Recibe tu pedido gratis en menos de 48 hs.</Text>
+                    <Text fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '11px'}} fontWeight='bold'>Envios en Santa Rosa</Text>
+                    <Text fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '11px'}} width= {{base:'75%', md:'100%', sm:'100%'}}>Recibe tu pedido gratis en menos de 48 hs.</Text>
                 </Flex>
             </Box>
 
-            <Box display='flex' width= '25%'>
-                <Image src='../public/politica.svg' width= '50px' height = '50px'/>
+            <Box display= 'flex' flexDirection = {{base: 'row', xl: 'row', lg:'row',md: 'column', sm: 'column'}} alignItems={{base:'flex-start', xl:'flex-start', lg:'flex-start',md:'center', sm: 'center'}} textAlign={{base:'left', xl: 'left', lg: 'left',md:'center', sm:'center'}} width= '25%'>
+                <Image src='../public/politica.svg' width= {{base:'50px', xl: '50px', lg: '40px', md: '35px', sm: '25px'}} height = {{base:'50px',xl: '50px',lg: '40px',md: '35px', sm: '25px'}}/>
                 <Flex display='flex' flexDirection='column' paddingLeft = '10px'>
-                    <Text fontWeight='bold'>Politica de satisfacción</Text>
-                    <Text width= '70%'>Si tienes un problema, puedes contactarnos.</Text>
+                    <Text fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '11px'}} fontWeight='bold'>Politica de satisfacción</Text>
+                    <Text fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '11px'}}width= {{base:'75%', md:'100%', sm:'100%'}}>Si tienes un problema, puedes contactarnos.</Text>
                 </Flex>
             </Box>
 
-            <Box display='flex' width= '25%'>
-                <Image src='../public/atencion.svg' width= '50px' height = '50px'/>
+            <Box display='flex' flexDirection = {{base: 'row', xl: 'row', lg:'row',md: 'column', sm: 'column'}} alignItems={{base:'flex-start', xl:'flex-start', lg:'flex-start',md:'center', sm: 'center'}} textAlign={{base:'left', xl: 'left', lg: 'left',md:'center', sm:'center'}} width= '25%'>
+                <Image src='../public/atencion.svg' width= {{base:'50px', xl: '50px', lg: '40px', md: '35px', sm: '25px'}} height = {{base:'50px',xl: '50px',lg: '40px',md: '35px', sm: '25px'}}/>
                 <Flex display='flex' flexDirection='column' paddingLeft = '10px'>
-                    <Text fontWeight='bold'>Atención virtual</Text>
-                    <Text width= '75%'>Sistema de atención virtual, disponible 24 hs.</Text>
+                    <Text fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '11px'}} fontWeight='bold'>Atención virtual</Text>
+                    <Text fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '11px'}} width= {{base:'75%', md:'100%', sm:'100%'}}>Sistema de atención virtual, disponible 24 hs.</Text>
                 </Flex>
             </Box>
 
-            <Box display='flex' width = '25%'>
-                <Image src='../public/pago.svg' width= '50px' height = '50px'/>
+            <Box display='flex' flexDirection = {{base: 'row', xl: 'row', lg:'row',md: 'column', sm: 'column'}} alignItems={{base:'flex-start', xl:'flex-start', lg:'flex-start',md:'center', sm: 'center'}} textAlign={{base:'left', xl: 'left', lg: 'left',md:'center', sm:'center'}} width = '25%'>
+                <Image src='../public/pago.svg' width= {{base:'50px', xl: '50px', lg: '40px', md: '35px', sm: '25px'}} height = {{base:'50px',xl: '50px',lg: '40px',md: '35px', sm: '25px'}}/>
                 <Flex display='flex' flexDirection='column' paddingLeft = '10px'>
-                    <Text fontWeight='bold'>Paga al recibir</Text>
-                    <Text width= '75%'>Selecciona tu metodo de pago preferido.</Text>
+                    <Text fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '11px'}} fontWeight='bold'>Paga al recibir</Text>
+                    <Text fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '11px'}} width= {{base:'75%', md:'100%', sm:'100%'}}>Selecciona tu metodo de pago preferido.</Text>
                 </Flex>
             </Box>
 
