@@ -7,22 +7,24 @@ const MotionText = motion(Text)
 const MotionLink = motion(Link)
 const MotionImage = motion(Image)
 const MotionBox = motion(Box)
-const whatsappLink = "https://wa.me/5491100000000?text=¡Hola!%20Estoy%20interesado%20en%20más%20información.";
+const whatsappLink = "https://wa.me/5491100000000?text=¡Hola!%20Quiero%20hacer%20una%20consulta.%20";
+
 
 const Inicio = () => {
-
 return (
     <Box overflow='hidden' display='flex' flexDirection='column' alignItems='center' backgroundColor = '#f7f4f2' id = 'Inicio'>
        
         <MotionFlex width='70%' display='flex' justifyContent='space-between' paddingTop = '70px'>
 
-            <MotionText as = 'h2' fontSize='30px' fontWeight='light'
+            <MotionText as = 'h2' fontSize={{base: '30px', xl: '30px', lg: '29px', md: '27px', sm: '25px'}} fontWeight='light'
             initial = {{x: '0', opacity: 0}}
             animate = {{ x: 0, opacity: 1}}
             transition = {{duration: 2, ease: 'easeInOut'}}>Menú por mascotas</MotionText>
 
             <MotionLink 
             transition = 'all 0.2s ease-in-out' 
+            paddingTop='10px'
+            fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}}
             _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}
             initial = {{x: '0', opacity: 0}}
             animate = {{ x: 0, opacity: 1}}
@@ -30,33 +32,34 @@ return (
             >Ver todo</MotionLink>
         </MotionFlex>
 
-        <Box width='70%' display='flex' justifyContent='space-between' paddingTop = '20px' id = 'mascotas'>
+        <Box width= '70%' display='flex' justifyContent='space-between' paddingTop = '20px' id = 'mascotas'>
            <Flex display='flex' flexDirection= 'column' alignItems='center'>
-                <MotionImage src = '../public/perro.jpg' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}} width='200px' height='200px' borderRadius='200px'/>
-                <MotionLink paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}
+                <MotionImage src = '../public/perro.jpg' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}} 
+                width={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px'}} height={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px', }} borderRadius='200px'/>
+                <MotionLink fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}} paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontWeight: 'bold'}}
                   initial = {{x: '0', opacity: 0}}
                   animate = {{ x: 0, opacity: 1}}
                   transition = {{duration: 2, ease: 'easeInOut' }}>Perros</MotionLink>
             </Flex>
 
             <Flex display='flex' flexDirection= 'column' alignItems='center'>
-                <MotionImage src = '../public/gato2.png' width='200px' height='200px' borderRadius='200px' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}}/>
-                <MotionLink paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}  initial = {{x: '0', opacity: 0}}
+                <MotionImage src = '../public/gato2.png' width={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px'}} height={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px', }} borderRadius='200px' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}}/>
+                <MotionLink fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}} paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}  initial = {{x: '0', opacity: 0}}
                 animate = {{ x: 0, opacity: 1}}
                 transition = {{duration: 2, ease: 'easeInOut' }}>Gatos</MotionLink>
             </Flex>
 
             <Flex display='flex' flexDirection= 'column' alignItems='center'>
-                <MotionImage src = '../public/gallina.png' width='200px' height='200px' borderRadius='200px' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}}/>
-                <MotionLink paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}
+                <MotionImage src = '../public/gallina.png' width={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px'}} height={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px', }} borderRadius='200px' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}}/>
+                <MotionLink fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}} paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}
                 initial = {{x: '0', opacity: 0}}
                 animate = {{ x: 0, opacity: 1}}
                 transition = {{duration: 2, ease: 'easeInOut' }}>Aves</MotionLink>
             </Flex>
 
             <Flex display='flex' flexDirection= 'column' alignItems='center'>
-                <MotionImage src = '../public/conejo.png' width='200px' height='200px' borderRadius='200px' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}}/>
-                <MotionLink paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}
+                <MotionImage src = '../public/conejo.png' width={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px'}} height={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px', }} borderRadius='200px' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}}/>
+                <MotionLink fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}} paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}
                 initial = {{x: '0', opacity: 0}}
                 animate = {{ x: 0, opacity: 1}}
                 transition = {{duration: 2, ease: 'easeInOut' }}>Conejos</MotionLink>
