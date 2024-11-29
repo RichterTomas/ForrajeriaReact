@@ -48,6 +48,7 @@ const Presentacion = () => {
     // Codigo de carrusel de presentación
     return (
         <Box
+        backgroundAttachment='fixed'
             bg="black"
             sx={{
                 ".swiper-pagination-bullet": {
@@ -60,6 +61,8 @@ const Presentacion = () => {
                     opacity: 1,
                 },
             }}
+       
+
         >
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}

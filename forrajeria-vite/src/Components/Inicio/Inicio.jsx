@@ -203,19 +203,59 @@ return (
 
        
         {/* Imagen de cierre de inicio */}
-        <Flex backgroundImage= {images} width= '100%' height='58vh' display='flex' flexDirection='column' justifyContent='center' alignItems='center' marginTop = '100px' id = 'imagen'>
-            <MotionText color = 'white' fontWeight='bolder' fontSize='30px' 
-            initial = {{x: 0, opacity: 0}}
-            whileInView = {{ x: 0, opacity: 1}}
-            viewport={{once: true}}
-            transition = {{duration: 2, ease: 'easeInOut' }}>Realiza tu consulta con nosotros!</MotionText>
+        <Box 
+    position="relative" 
+    width="100%" 
+    height="58vh" 
+    marginTop="100px"
+    
+>
+    {/* Fondo desenfocado */}
+    <Box 
+        position="absolute" 
+        top="0" 
+        left="0" 
+        width="100%" 
+        height="100%" 
+        backgroundImage={images}
+        backgroundSize="cover"
+        backgroundPosition="center"
+        filter="blur(2px)"
+    />
+    {/* Contenido */}
+    <Flex 
+        display="flex" 
+        flexDirection="column" 
+        justifyContent="center" 
+        alignItems="center" 
+        height="100%" 
+        position="relative"
+    >
+        <MotionText 
+            color="white" 
+            fontWeight="bolder" 
+            fontSize={{ base: '20px', xl: '30px', lg: '29px', md: '27px', sm: '25px' }}
+            initial={{ x: 0, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2, ease: 'easeInOut' }}
+        >
+            Realiza tu consulta con nosotros!
+        </MotionText>
 
-            <MotionLink color = '#ff7300' 
-            initial = {{x: 0, opacity: 0}}
-            whileInView = {{ x: 0, opacity: 1}}
-            viewport={{once: true}}
-            transition = {{duration: 2, ease: 'easeInOut' }}>Click aqui</MotionLink>
-        </Flex>
+        <MotionLink 
+            color="#ff7300" 
+            initial={{ x: 0, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2, ease: 'easeInOut' }}
+        >
+            Click aquí
+        </MotionLink>
+    </Flex>
+</Box>
+
+
     </Box>
 
 )

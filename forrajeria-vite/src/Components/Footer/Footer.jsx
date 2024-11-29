@@ -58,6 +58,7 @@ const Footer = () => {
                             <Link>
                                 <Image src = '../public/facebook.svg' width = {{xl: '35px', lg: '25px', md: '20px', sm:'15px', base: '10px'}} height= {{xl: '35px', lg: '25px', md: '20px', sm:'15px', base: '10px'}}
                                 transition = 'filter 0.2s ease-in-out' 
+                                filter = 'grayscale(100%)' 
                                 _hover = {{filter: 'grayscale(0%)'}}/>
                             </Link>
 
