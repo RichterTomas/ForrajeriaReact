@@ -1,4 +1,4 @@
-import { Box, Text, Flex, Link, Image, IconButton } from '@chakra-ui/react';
+import { Box, Text, Flex, Link, Image, IconButton, useBreakpointValue } from '@chakra-ui/react';
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -11,9 +11,40 @@ const whatsappLink = "https://wa.me/5491100000000?text=¡Hola!%20Quiero%20hacer%
 
 
 const Inicio = () => {
+
+    // Defino las imagenes que se van a usar para cada tamaño de pantalla
+    const images = useBreakpointValue({
+        xl: "./public/image.png",
+        lg: "./public/imagenPie.jpg",
+        sm: "./public/imagenPie2.jpg",
+        base: "./public/imagenPie3.jpg",
+    })
+
 return (
     <Box overflow='hidden' display='flex' flexDirection='column' alignItems='center' backgroundColor = '#f7f4f2' id = 'Inicio'>
-       
+        {/* Boton de contacto whatsapp */}
+        <Link
+        href="https://wa.me/2954529859?text=¡Hola!%20Estoy%20interesado%20en%20más%20información."
+        isExternal
+        position="fixed"
+        bottom="10px"
+        right="20px"
+        zIndex="1000"
+        >
+            <IconButton
+            icon={<FaWhatsapp />}
+            aria-label="WhatsApp Chat"
+            colorScheme="green"
+            size="lg"
+            isRound
+            boxShadow="lg"
+            transition="all 0.3s"
+            _hover={{ transform: "scale(1.1)" }}
+                />
+        </Link>
+        
+
+        {/* Contenedores del menu dividido por mascotas */}
         <MotionFlex width='70%' display='flex' justifyContent='space-between' paddingTop = '70px'>
 
             <MotionText as = 'h2' fontSize={{base: '30px', xl: '30px', lg: '29px', md: '27px', sm: '25px'}} fontWeight='light'
@@ -68,6 +99,7 @@ return (
         </Box>
 
 
+        {/* Contenedores de los distribuidores con los que trabaja el negocio */}
         <Box width='70%' display='flex'  flexDirection = 'column' justifyContent='space-between' paddingTop = '100px' id ='distribuidores'>
             <MotionText as = 'h2' fontSize={{base: '30px', xl: '30px', lg: '29px', md: '27px', sm: '25px'}} fontWeight='light'
               initial = {{x: 0, opacity: 0}}
@@ -127,6 +159,8 @@ return (
 
         </Box>
 
+
+        {/* Politicas con las que trabaja el negocio */}
         <MotionBox width='70%' paddingTop = '100px' display = 'flex' id = 'politicas' 
         initial = {{x: 0, opacity: 0}}
         whileInView = {{ x: 0, opacity: 1}}
@@ -166,27 +200,9 @@ return (
 
         </MotionBox>
 
-        <Link
-        href="https://wa.me/2954529859?text=¡Hola!%20Estoy%20interesado%20en%20más%20información."
-        isExternal
-        position="fixed"
-        bottom="10px"
-        right="20px"
-        zIndex="1000"
-        >
-            <IconButton
-            icon={<FaWhatsapp />}
-            aria-label="WhatsApp Chat"
-            colorScheme="green"
-            size="lg"
-            isRound
-            boxShadow="lg"
-            transition="all 0.3s"
-            _hover={{ transform: "scale(1.1)" }}
-                />
-        </Link>
-
-        <Flex backgroundImage= '../public/image.png' width= '100%' height='58vh' display='flex' flexDirection='column' justifyContent='center' alignItems='center' marginTop = '100px' id = 'imagen'>
+       
+        {/* Imagen de cierre de inicio */}
+        <Flex backgroundImage= {images} width= '100%' height='58vh' display='flex' flexDirection='column' justifyContent='center' alignItems='center' marginTop = '100px' id = 'imagen'>
             <MotionText color = 'white' fontWeight='bolder' fontSize='30px' 
             initial = {{x: 0, opacity: 0}}
             whileInView = {{ x: 0, opacity: 1}}
