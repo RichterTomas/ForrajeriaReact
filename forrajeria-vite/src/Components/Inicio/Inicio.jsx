@@ -47,7 +47,7 @@ return (
         {/* Contenedores del menu dividido por mascotas */}
         <MotionFlex width='70%' display='flex' justifyContent='space-between' paddingTop = '70px'>
 
-            <MotionText as = 'h2' fontSize={{base: '30px', xl: '30px', lg: '29px', md: '27px', sm: '25px'}} fontWeight='light'
+            <MotionText as = 'h2' fontSize={{base: '20px', xl: '30px', lg: '29px', md: '27px', sm: '25px'}} fontWeight='light'
             initial = {{x: '0', opacity: 0}}
             animate = {{ x: 0, opacity: 1}}
             transition = {{duration: 2, ease: 'easeInOut'}}>Menú por mascotas</MotionText>
@@ -55,7 +55,7 @@ return (
             <MotionLink 
             transition = 'all 0.2s ease-in-out' 
             paddingTop='10px'
-            fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}}
+            fontSize= {{base:'13px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}}
             _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}
             initial = {{x: '0', opacity: 0}}
             animate = {{ x: 0, opacity: 1}}
@@ -66,31 +66,32 @@ return (
         <Box width= '70%' display='flex' justifyContent='space-between' paddingTop = '20px' id = 'mascotas'>
            <Flex display='flex' flexDirection= 'column' alignItems='center'>
                 <MotionImage src = '../public/perro.jpg' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}} 
-                width={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px'}} height={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px', }} borderRadius='200px'/>
-                <MotionLink fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}} paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontWeight: 'bold'}}
+                width={{base:'70px', xl:'200px', lg:'170px', md: '130px', sm: '100px'}} height={{base:'70px', xl:'200px', lg:'170px', md: '130px', sm: '100px', }} borderRadius='200px'/>
+                <MotionLink fontSize= {{base:'13px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}} paddingTop = '10px' transition = 'all 0.2s ease-in-out' 
+                  _hover = {{color: "#ff7300", textDecoration: 'none', fontWeight: 'bold'}}
                   initial = {{x: '0', opacity: 0}}
                   animate = {{ x: 0, opacity: 1}}
                   transition = {{duration: 2, ease: 'easeInOut' }}>Perros</MotionLink>
             </Flex>
 
             <Flex display='flex' flexDirection= 'column' alignItems='center'>
-                <MotionImage src = '../public/gato2.png' width={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px'}} height={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px', }} borderRadius='200px' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}}/>
-                <MotionLink fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}} paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}  initial = {{x: '0', opacity: 0}}
+                <MotionImage src = '../public/gato2.png' width={{bbase:'70px', xl:'200px', lg:'170px', md: '130px', sm: '100px'}} height={{base:'70px', xl:'200px', lg:'170px', md: '130px', sm: '100px', }} borderRadius='200px' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}}/>
+                <MotionLink fontSize= {{base:'13px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}} paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}  initial = {{x: '0', opacity: 0}}
                 animate = {{ x: 0, opacity: 1}}
                 transition = {{duration: 2, ease: 'easeInOut' }}>Gatos</MotionLink>
             </Flex>
 
             <Flex display='flex' flexDirection= 'column' alignItems='center'>
-                <MotionImage src = '../public/gallina.png' width={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px'}} height={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px', }} borderRadius='200px' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}}/>
-                <MotionLink fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}} paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}
+                <MotionImage src = '../public/gallina.png' width={{base:'70px', xl:'200px', lg:'170px', md: '130px', sm: '100px'}} height={{base:'70px', xl:'200px', lg:'170px', md: '130px', sm: '100px', }} borderRadius='200px' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}}/>
+                <MotionLink fontSize= {{base:'13px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}} paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}
                 initial = {{x: '0', opacity: 0}}
                 animate = {{ x: 0, opacity: 1}}
                 transition = {{duration: 2, ease: 'easeInOut' }}>Aves</MotionLink>
             </Flex>
 
             <Flex display='flex' flexDirection= 'column' alignItems='center'>
-                <MotionImage src = '../public/conejo.png' width={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px'}} height={{base:'200px', xl:'200px', lg:'170px', md: '130px', sm: '100px', }} borderRadius='200px' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}}/>
-                <MotionLink fontSize= {{base:'16px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}} paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}
+                <MotionImage src = '../public/conejo.png' width={{base:'70px', xl:'200px', lg:'170px', md: '130px', sm: '100px'}} height={{base:'70px', xl:'200px', lg:'170px', md: '130px', sm: '100px', }} borderRadius='200px' initial = {{opacity: 0}} animate = {{opacity: 1}} transition = {{duration: 2.5, ease: 'easeInOut'}}/>
+                <MotionLink fontSize= {{base:'13px', xl: '16px', lg: '15px', md: '14px', sm: '13px'}} paddingTop = '10px' transition = 'all 0.2s ease-in-out' _hover = {{color: "#ff7300", textDecoration: 'none', fontSize:"17px", fontWeight: 'bold'}}
                 initial = {{x: '0', opacity: 0}}
                 animate = {{ x: 0, opacity: 1}}
                 transition = {{duration: 2, ease: 'easeInOut' }}>Conejos</MotionLink>
@@ -101,7 +102,7 @@ return (
 
         {/* Contenedores de los distribuidores con los que trabaja el negocio */}
         <Box width='70%' display='flex'  flexDirection = 'column' justifyContent='space-between' paddingTop = '100px' id ='distribuidores'>
-            <MotionText as = 'h2' fontSize={{base: '30px', xl: '30px', lg: '29px', md: '27px', sm: '25px'}} fontWeight='light'
+            <MotionText as = 'h2' fontSize={{base: '20px', xl: '30px', lg: '29px', md: '27px', sm: '25px'}} fontWeight='light'
               initial = {{x: 0, opacity: 0}}
               whileInView = {{ x: 0, opacity: 1}}
               viewport={{once: true}}
@@ -166,7 +167,7 @@ return (
         whileInView = {{ x: 0, opacity: 1}}
         viewport={{once: true}}
         transition = {{duration: 2, ease: 'easeInOut' }}>
-            <Box display='flex' flexDirection = {{base: 'row', xl: 'row', lg:'row',md: 'column', sm: 'column'}} alignItems={{base:'center', xl:'flex-start', lg:'flex-start',md:'center', sm: 'center'}} textAlign={{xl: 'left', lg: 'left',md:'center', sm:'center',base:'center'}} width= '25%'>
+            <Box display='flex' flexDirection = {{ xl: 'row', lg:'row',md: 'column', sm: 'column', base: 'column'}} alignItems={{base:'center', xl:'flex-start', lg:'flex-start',md:'center', sm: 'center'}} textAlign={{xl: 'left', lg: 'left',md:'center', sm:'center',base:'center'}} width= '25%'>
                 <Image src='../public/envio.svg' width= {{xl: '50px',lg: '40px',md: '35px', sm: '25px',base:'20px'}} height = {{xl: '50px',lg: '40px',md: '35px', sm: '25px',base:'20px'}} height = {{xl: '50px',lg: '40px',md: '35px', sm: '25px',base:'20px'}}/>
                 <Flex display='flex' flexDirection='column' paddingLeft = '10px'>
                     <Text fontSize= {{ xl: '16px', lg: '15px', md: '14px', sm: '11px', base:'8px'}} fontWeight='bold'>Envios en Santa Rosa</Text>
@@ -182,7 +183,7 @@ return (
                 </Flex>
             </Box>
 
-            <Box display='flex' flexDirection = {{base: 'row', xl: 'row', lg:'row',md: 'column', sm: 'column'}} alignItems={{base:'flex-start', xl:'flex-start', lg:'flex-start',md:'center', sm: 'center'}} textAlign={{xl: 'left', lg: 'left',md:'center', sm:'center', base: 'center'}} width= '25%'>
+            <Box display='flex' flexDirection = {{xl: 'row', lg:'row',md: 'column', sm: 'column', base: 'column'}} alignItems={{xl:'flex-start', lg:'flex-start',md:'center', sm: 'center',base:'center'}} textAlign={{xl: 'left', lg: 'left',md:'center', sm:'center', base: 'center'}} width= '25%'>
                 <Image src='../public/atencion.svg' width= {{xl: '50px', lg: '40px', md: '35px', sm: '25px', base:'20px'}} height = {{xl: '50px',lg: '40px',md: '35px', sm: '25px', base: '20px'}}/>
                 <Flex display='flex' flexDirection='column' paddingLeft = '10px'>
                     <Text fontSize= {{ xl: '16px', lg: '15px', md: '14px', sm: '11px', base:'8px'}} fontWeight='bold'>Atención virtual</Text>
