@@ -11,7 +11,9 @@ const Footer = () => {
             transition = {{duration: 2, ease: 'easeInOut' }}>
             <Flex width="70%" bg="black" padding="1px" marginTop="50px"></Flex>
             
-            <Box width="70%" display="flex" flexDirection = {{xl:'row', lg:'row', md:'row', sm: 'column', base: 'column'}}justifyContent="space-between" paddingTop='50px'>
+            <Box width="70%" display="flex" flexDirection = {{xl:'row', lg:'row', md:'row', sm: 'column', base: 'column'}}justifyContent="space-between" 
+            textAlign={{xl: 'left', lg: 'left', md: 'left', sm: 'center', base: 'center'}} 
+            paddingTop='50px'>
                 <Flex display="flex" flexDirection="column">
                     <Text as = 'h2' fontSize={{xl: '30px', lg: '29px', md: '25px', sm: '20px', base: '15px'}} paddingBottom='5px'>Forrajería "Los Patos"</Text>
                     <Text fontSize= {{xl: '16px', lg: '15px', md: '14px', sm: '11px', base: '8px'}}>Entregamos satisfacción!</Text>
