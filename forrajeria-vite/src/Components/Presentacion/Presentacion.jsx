@@ -48,9 +48,8 @@ const Presentacion = () => {
     // Codigo de carrusel de presentación
     return (
         <Box
-        backgroundAttachment='fixed'
             bg="black"
-            sx={{
+            sx={{                                               //Permite controlar las propiedades de los "botones" o "balas" del carrusel
                 ".swiper-pagination-bullet": {
                     bg: 'black',
                     opacity: 0.4,
@@ -65,13 +64,13 @@ const Presentacion = () => {
 
         >
             <Swiper
-                modules={[Navigation, Pagination, Autoplay]}
+                modules={[Navigation, Pagination, Autoplay]}    //Son los modulos que permiten la manipulacion de propiedades del carrusel
                 autoplay={{ delay: 3500 }}
                 pagination={{ clickable: true }}
                 loop={true}
                 style={{ width: "100%", height}}
             >
-                {images?.map((image, index) => (
+                {images?.map((image, index) => (                //Hace un recorrido y muestra las imagenes seleccionadas en el breakpoint
                     <SwiperSlide key={index}>
                         <Box
                             as='img'
