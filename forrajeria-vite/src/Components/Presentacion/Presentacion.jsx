@@ -22,16 +22,25 @@ const Presentacion = () => {
         "./public/conejos2.jpg"
     ];
 
+    const imagesSM = [
+        "./public/perros2.jpg",
+        "./public/gatos2.jpg",
+        "./public/gallinas2.jpg",
+        "./public/conejos2.jpg"
+    ];
+
     
     // Definicion de breakpoints para realizar las medidas responsivas de pantallas
     const images = useBreakpointValue({
+        base: imagesSM,
         md: imagesMD,   
         xl: imagesXL,   
     });
 
     const height = useBreakpointValue({
         xl: "600px",
-        md: "500px"
+        md: "500px",
+        base: "400px"
 
     })
 
