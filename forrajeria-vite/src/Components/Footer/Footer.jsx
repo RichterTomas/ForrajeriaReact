@@ -8,12 +8,19 @@ const Footer = () => {
             initial = {{x: 0, opacity: 0}}
             whileInView = {{ x: 0, opacity: 1}}
             viewport={{once: true}}
-            transition = {{duration: 2, ease: 'easeInOut' }}>
+            transition = {{duration: 2, ease: 'easeInOut' }}
+            paddingBottom = '10px'>
+
+            {/* Genera una linea negra que va a funcionar como "marco" para el texto que ira en medio */}
             <Flex width="70%" bg="black" padding="1px" marginTop="50px"></Flex>
             
+
+            {/* Contenedor principal del footer */}
             <Box width="70%" display="flex" flexDirection = {{xl:'row', lg:'row', md:'row', sm: 'column', base: 'column'}}justifyContent="space-between" 
             textAlign={{xl: 'left', lg: 'left', md: 'left', sm: 'center', base: 'center'}} 
             paddingTop='50px'>
+
+                {/* Caja contenedora de caracteristicas del negocio */}
                 <Flex display="flex" flexDirection="column">
                     <Text as = 'h2' fontSize={{xl: '30px', lg: '29px', md: '25px', sm: '20px', base: '15px'}} paddingBottom='5px'>Forrajería "Los Patos"</Text>
                     <Text fontSize= {{xl: '16px', lg: '15px', md: '14px', sm: '11px', base: '8px'}}>Entregamos satisfacción!</Text>
@@ -35,6 +42,7 @@ const Footer = () => {
                     </Text>
                 </Flex>
 
+                {/* Caja contenedora de la informacion del negocio y sus politicas */}
                 <Flex display = 'flex' flexDirection= 'column'>
                     <Text as = 'h2' fontSize={{xl: '30px', lg: '29px', md: '25px', sm: '20px', base: '15px'}} marginTop = {{base:'0px', xl: '0px', lg: '0px', md: '0px', sm:'10px'}}paddingBottom='5px'>Información de negocio</Text>
                     <Link fontSize= {{xl: '16px', lg: '15px', md: '14px', sm: '11px', base: '8px'}} _hover = {{color: "#ff7300", textDecoration: 'none', transition: '0.2s ease-in-out'}}>Politica de privacidad</Link>
@@ -44,12 +52,17 @@ const Footer = () => {
                 </Flex>
             </Box>
             
+            {/* Linea negra que da cierre al contenido principal del footer */}
             <Flex width="70%" bg="black" padding="1px" marginTop="50px" marginBottom = '10px'></Flex>
 
+
+            {/* Contenedor secundario del footer  */}
             <Box width="70%" display="flex" justifyContent="space-between">
                 <Flex>
                     <Text fontSize= {{xl: '16px', lg: '15px', md: '14px', sm: '11px', base: '8px'}} fontWeight='bold'>© 2024 Forrajeria "Los Patos"</Text>
                 </Flex>
+
+                {/* Caja contenedora de los botones de contacto */}
                 <Box>
                     <Flex display="flex" flexDirection="column" alignItems='center'>
                         <Text fontSize= {{xl: '16px', lg: '15px', md: '14px', sm: '11px', base: '8px'}} paddingBottom = '10px' fontWeight='bold'>Hablanos</Text>
@@ -71,6 +84,8 @@ const Footer = () => {
                         </Flex>
                     </Flex>
                 </Box>
+
+                {/* Caja contenedora de los metodos de pago aceptados por el negocio */}
                 <Box display = 'flex' flexDirection='column' alignContent='end' alignItems='end' textAlign= 'end' width='20%'>
                     <Text fontSize= {{xl: '16px', lg: '15px', md: '14px', sm: '11px', base: '8px'}}  paddingBottom = '10px' fontWeight='bold'>Aceptamos</Text>
                     <Flex display = 'flex' justifyContent = 'space-between' width = '70%'>
